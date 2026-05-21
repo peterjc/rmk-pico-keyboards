@@ -1,6 +1,6 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "Rugby League ESP32-S3"
+name = "Rugby League ESP32S3"
 product_name = "Rugby League ESP32-S3 Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
