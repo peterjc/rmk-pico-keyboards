@@ -1,7 +1,7 @@
 # Peter's RMK Keyboard Firmware
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/peterjc/rmk-rugby-league/main.svg)](https://results.pre-commit.ci/latest/github/peterjc/rmk-rugby-league/main)
-[![GitHub Actions status](https://github.com/peterjc/rmk-rugby-league/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/peterjc/qmk_userspace/actions)
+[![GitHub Actions status](https://github.com/peterjc/rmk-rugby-league/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/peterjc/rmk-rugby-league/actions)
 
 This is my fork of the
 [RMK Project Template repository](https://github.com/HaoboGu/rmk-project-template),
