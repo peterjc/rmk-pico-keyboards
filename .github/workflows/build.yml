@@ -1,4 +1,4 @@
-name: Build $NAME RMK firmware
+name: Build RMK firmware
 on:
   workflow_dispatch:
   push:
@@ -9,5 +9,5 @@ jobs:
   build:
     uses: haobogu/rmk/.github/workflows/user_build.yml@main
     with:
-      keyboard_toml_path: "$NAME/keyboard.toml"
-      vial_json_path: "$NAME/vial.json"
+      keyboard_toml_path: "keyboard.toml"
+      vial_json_path: "vial.json"
