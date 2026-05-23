@@ -12,11 +12,18 @@ This follows the documentation for using
 with a slightly more complicated
 [workflow to build multiple keyboards](.github/workflows/build.yml).
 
-Initially at least, this is focused on my wireless split
-[Rugby League 15-a-side keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugbyleague)
+Initially this was focused on my wireless split
+[Rugby League 15-a-side split keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugbyleague)
 which is designed to work with a choice of "Zero" sized controllers including
 the NRF52840 chip (very well supported in ZMK) and the ESP32-S3 or ESP32-H2
-(not yet supported in ZMK).
+(not yet supported in ZMK). This is diode-free using direct wiring (one GPIO
+per key). I also added my
+[Rugby Union 15-a-side unibody keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugbyunion)
+which has the same layout and uses a Raspberry Pi RP2040 chip (in a "Pro
+Micro" size controller). This is also diode-free, but using Graph Theory to
+design a sparse scanning matrix to avoid ghosting up to 8KRO. See my old
+[blog post](https://astrobeano.blogspot.com/2025/05/topology-meets-custom-keyboard-circuit.html)
+for how that approach works.
 
 Currently in RMK a keyboard firmware is defined by two files, `keyboard.toml`
 (which includes the chipset, wiring matrix, *and* layout) and `vial.json`
