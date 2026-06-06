@@ -11,6 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         kb:
+          - { name: Rugby_Union_RP2040 }
           - { name: Rugby_League_ESP32S3 }
           - { name: Rugby_League_NRF52840 }
     uses: HaoboGu/rmk/.github/workflows/user_build.yml@main
