@@ -1,6 +1,6 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "Rugby Union 'Fly Half' ESP32S3"
+name = "Fly Half ESP32S3"
 product_name = "Rugby Union 'Fly Half' ESP32-S3 Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
