@@ -1,11 +1,11 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "Rugby League ESP32S3"
-product_name = "Rugby League ESP32-S3 Keyboard"
+name = "Rugby Union 'Fly Half' NRF52840"
+product_name = "Rugby Union 'Fly Half' NRF52840 Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"
-chip = "esp32s3"
+chip = "nrf52840"
 
 [split]
 # split connection type
@@ -28,9 +28,9 @@ matrix_type = "direct_pin"
 
 # 2D array representing your direct-pin matrix
 direct_pins = [
-    ["GPIO2", "GPIO3", "GPIO8", "GPIO1", "GPIO11"],
-    ["GPIO4", "GPIO6", "GPIO9", "GPIO44", "GPIO43"],
-    ["GPIO5", "GPIO7", "GPIO10", "GPIO12", "GPIO13"]
+    ["P1_12", "P1_15", "P0_04", "P1_11", "P0_29"],
+    ["P1_13", "P1_02", "P0_05", "P1_10", "P1_03"],
+    ["P1_14", "P1_01", "P0_30", "P0_31", "P0_02"]
 ]
 
 # Pin behavior (default: true = active low with pull-up)
@@ -54,9 +54,9 @@ matrix_type = "direct_pin"
 
 # 2D array representing your direct-pin matrix
 direct_pins = [
-    ["GPIO4", "GPIO1", "GPIO7", "GPIO12", "GPIO13"],
-    ["GPIO43", "GPIO44", "GPIO6", "GPIO9", "GPIO11"],
-    ["GPIO2", "GPIO3", "GPIO5", "GPIO8", "GPIO10"]
+    ["P1_13", "P1_11", "P1_01", "P0_31", "P0_02"],
+    ["P1_03", "P1_10", "P1_02", "P0_05", "P0_29"],
+    ["P1_12", "P1_15", "P1_14", "P0_04", "P0_30"]
 ]
 
 # Pin behavior (default: true = active low with pull-up)
@@ -82,4 +82,4 @@ Z X C V B N M Comma Dot Slash
 
 [host]
 # Vial Unlock combination: simultaneous press of specified keys
-unlock_keys = [[0, 0], [0, 9]]  # Q and P
+unlock_keys = [[0, 0], [0, 9]]  # Q and Pi

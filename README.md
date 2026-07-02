@@ -12,12 +12,12 @@ This follows the documentation for using
 with a slightly more complicated
 [workflow to build multiple keyboards](.github/workflows/build.yml).
 
-Initially this was focused on my wireless split
-[Rugby League 15-a-side split keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugbyleague)
+Initially this was focused on my wireless split [Rugby Union "Fly Half"
+15-a-side split keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugbyleague)
 which is designed to work with a choice of "Zero" sized controllers including
 the NRF52840 chip (very well supported in ZMK) and the ESP32-S3 or ESP32-H2
 (not yet supported in ZMK). This is diode-free using direct wiring (one GPIO
-per key). I also added my
+per key). I also added my earlier
 [Rugby Union 15-a-side unibody keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugbyunion)
 which has the same layout and uses a Raspberry Pi RP2040 chip (in a "Pro
 Micro" size controller). This is also diode-free, but using Graph Theory to
@@ -29,7 +29,7 @@ Currently in RMK a keyboard firmware is defined by two files, `keyboard.toml`
 (which includes the chipset, wiring matrix, *and* layout) and `vial.json`
 (which describes the physical layout for use with the Vial layout editor).
 That means I need a different `keyboard.toml` for each potential controller
-of my "Rugby League" keyboard, but they can share the same `vial.json` file.
+of my "Fly Half" keyboard, but they can share the same `vial.json` file.
 I would also need a separate `keyboard.toml` for a default Qwerty layout
 and my personal layout based on Hands Down Promethium. Each combination is
 treated as a separate firmware to build, defined by a separate directory.
