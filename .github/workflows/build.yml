@@ -12,6 +12,7 @@ jobs:
       matrix:
         kb:
           - { name: Rugby_Union_RP2040 }
+          - { name: Fly_Half_ESP32H2 }
           - { name: Fly_Half_ESP32S3 }
           - { name: Fly_Half_NRF52840 }
     uses: HaoboGu/rmk/.github/workflows/user_build.yml@main
