@@ -16,8 +16,11 @@ Initially this was focused on my wireless split [Rugby Union "Fly Half"
 15-a-side split keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/flyhalf)
 which is designed to work with a choice of "Zero" sized controllers including
 the NRF52840 chip (very well supported in ZMK) and the ESP32-S3 or ESP32-H2
-(not yet supported in ZMK). This is diode-free using direct wiring (one GPIO
-per key). I also added my earlier unibody ["Rugby Union" 15-a-side unibody
+(not yet supported in ZMK but supported in RMK). This is diode-free using
+direct wiring (one GPIO per key).
+
+I also added my earlier unibody
+["Rugby Union" 15-a-side unibody
 keyboard](https://codeberg.org/peterjc/pico-keyboards/src/branch/main/rugbyunion)
 which has the same layout and uses a Raspberry Pi RP2040 chip (in a "Pro
 Micro" size controller). This is also diode-free, but using Graph Theory to
