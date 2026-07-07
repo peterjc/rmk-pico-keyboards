@@ -82,4 +82,4 @@ Z X C V B N M Comma Dot Slash
 
 [host]
 # Vial Unlock combination: simultaneous press of specified keys
-unlock_keys = [[0, 0], [0, 9]]  # Q and P
+unlock_keys = [[0, 0], [0, 4]]  # Q and T (top corners of left half)
