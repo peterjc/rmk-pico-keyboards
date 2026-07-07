@@ -1,7 +1,7 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
 name = "Rugby Union RP2040"
-product_name = "Rugby Union RP2040"
+product_name = "Rugby Union"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"

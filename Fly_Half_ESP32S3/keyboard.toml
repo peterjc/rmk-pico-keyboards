@@ -1,7 +1,7 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
 name = "Fly Half ESP32S3"
-product_name = "Fly Half ESP32-S3"
+product_name = "Fly Half"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "RMK"
