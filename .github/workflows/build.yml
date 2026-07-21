@@ -18,4 +18,4 @@ jobs:
     uses: HaoboGu/rmk/.github/workflows/user_build.yml@main
     with:
       keyboard_toml_path: ${{ matrix.kb.name }}/keyboard.toml
-      vial_json_path: ${{ matrix.kb.name }}/vial.json
+      vial_json_path: ${{ matrix.kb.name }}/vial-qwerty.json
