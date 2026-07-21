@@ -11,7 +11,8 @@ jobs:
       fail-fast: false
       matrix:
         kb:
-          - { name: Rugby_Union_RP2040 }
+          - { name: Rugby_Union_Qwerty }
+          - { name: Rugby_Union_Personal }
           - { name: Fly_Half_ESP32H2 }
           - { name: Fly_Half_ESP32S3 }
           - { name: Fly_Half_NRF52840 }
