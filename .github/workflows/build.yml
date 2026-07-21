@@ -11,11 +11,11 @@ jobs:
       fail-fast: false
       matrix:
         kb:
-          - { name: Rugby_Union_RP2040 }
-          - { name: Fly_Half_ESP32H2 }
-          - { name: Fly_Half_ESP32S3 }
-          - { name: Fly_Half_NRF52840 }
+          - { name: Rugby_Union_RP2040, layout: qwerty }
+          - { name: Fly_Half_ESP32H2, layout: qwerty }
+          - { name: Fly_Half_ESP32S3, layout: qwerty }
+          - { name: Fly_Half_NRF52840, layout: qwerty }
     uses: HaoboGu/rmk/.github/workflows/user_build.yml@main
     with:
       keyboard_toml_path: ${{ matrix.kb.name }}/keyboard.toml
-      vial_json_path: ${{ matrix.kb.name }}/vial-qwerty.json
+      vial_json_path: ${{ matrix.kb.name }}/vial-{{ matrix.kb.layout}}.json
