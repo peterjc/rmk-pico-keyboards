@@ -1,0 +1,43 @@
+# Documentation: https://rmk.rs/docs/configuration.html
+[keyboard]
+name = "Rugby Union - Personal"
+product_name = "Rugby Union"
+vendor_id = 0x4c4b
+product_id = 0x4643
+manufacturer = "RMK"
+chip = "rp2040"
+
+[matrix]
+# Define matrix pins, scanning matrix is 15 rows, 10 cols:
+row_pins = [
+    "PIN_26", "PIN_14", "PIN_9", "PIN_3", "PIN_23",
+    "PIN_13", "PIN_21", "PIN_28", "PIN_7", "PIN_4",
+    "PIN_2", "PIN_8", "PIN_16", "PIN_22", "PIN_29"
+]
+col_pins = [
+    "PIN_11", "PIN_20", "PIN_15", "PIN_5", "PIN_10",
+    "PIN_0", "PIN_6", "PIN_12", "PIN_1", "PIN_27"
+]
+
+[layout]
+# Physical layout is matrix of 3 rows, 10 cols
+rows = 15
+cols = 10
+layers = 6
+matrix_map = """
+(0, 0, L)  (0, 1, L)  (1, 2, L)  (2, 3, L)  (3, 4, L)    (5,  5, R)  (8,  6, R)  (6,  7, R)  (9,  8, R)  (7,  9, R)
+(4, 0, L)  (1, 1, L)  (2, 2, L)  (3, 3, L)  (4, 4, L)    (10, 5, R)  (10, 6, R)  (11, 7, R)  (12, 8, R)  (13, 9, R)
+(5, 0, L)  (6, 1, L)  (7, 2, L)  (8, 3, L)  (9, 4, L)    (14, 5, R)  (11, 6, R)  (12, 7, R)  (13, 8, R)  (14, 9, R)
+"""
+
+[[layer]]
+name = "base_layer"
+keys = """
+Escape P G M K Colon BackSpace Quote Hyphen Equal
+S N T H J Comma A E E C
+B F D L R Space U O Y W
+"""
+
+[host]
+# Vial Unlock combination: simultaneous press of specified keys
+unlock_keys = [[0, 0], [0, 9]]  # Q and P
