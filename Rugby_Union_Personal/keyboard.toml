@@ -46,6 +46,19 @@ KpAsterisk 4 5 6 KpMinus PageDown Left Down Right AudioVolUp
 Dot 7 8 9 0 Space Transparent Home Enter End AudioVolDown
 """
 
+[behavior.combo]
+timeout = "50ms"
+combos = [
+  # Letters on combos (layer 0 only)
+  { actions = ["P", "G"], output = "V", layer = 0 },
+  { actions = ["G", "M"], output = "Q", layer = 0 },
+  { actions = ["F", "D"], output = "X", layer = 0 },
+  { actions = ["Quote", "Minus"], output = "Z", layer = 0 },
+  # Three-key combos for tab and enter
+  { actions = ["F", "D", "L"], output = "Tab", layer = 0 },
+  { actions = ["U", "O", "Y"], output = "Enter", layer = 0 }
+]
+
 [host]
 # Vial Unlock combination: simultaneous press of specified keys
 unlock_keys = [[0, 0], [0, 9]]  # Q and P
