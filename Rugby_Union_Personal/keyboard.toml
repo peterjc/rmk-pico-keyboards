@@ -33,7 +33,7 @@ matrix_map = """
 [[layer]]
 name = "base_layer"
 keys = """
-Escape P G M K Colon BackSpace Quote Hyphen Equal
+Escape P G M K Colon BackSpace Quote Minus Equal
 S N T H J Comma A E E C
 B F D L R Space U O Y W
 """
