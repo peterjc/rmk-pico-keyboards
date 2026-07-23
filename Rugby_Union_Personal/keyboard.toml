@@ -35,7 +35,7 @@ name = "HD Promethium"
 keys = """
 Escape P G M K Dot BackSpace Quote Minus Equal
 S N T H J Comma A E E C
-B F D L R LT(1,Space) U O Y W
+B F D L TH(R,LShift) LT(1,Space) U O Y W
 """
 
 [[layer]]
@@ -45,6 +45,19 @@ KpSlash 1 2 3 KpPlus PageUp BackSpace Up SHIFTED(Minus) MediaPlayPause
 KpAsterisk 4 5 6 KpMinus PageDown Left Down Right AudioVolUp
 Dot 7 8 9 0 __ Home Enter End AudioVolDown
 """
+
+[behavior.fork]
+forks = [
+  # Shift + '.' outputs shift+semicolon for ':' key
+  { trigger = "Dot", negative_output = "Dot", positive_output = "WM(Semicolon, LShift)", match_any = "LShift|RShift" },
+  # Shift + ',' outputs ';' key
+  { trigger = "Comma", negative_output = "Comma", positive_output = "Semicolon", match_any = "LShift|RShift" },
+  # Shift + ' (single quote) outputs S(2) for " (double quote on UK/GB layout)
+  { trigger = "Quote", negative_output = "Comma", positive_output = "WM(2, LShift)", match_any = "LShift|RShift" },
+  # Left-shift + space (left thumb-shift held, tap right thumb) outputs 'R' key
+  # However, right-shift + space still gives shift+space for reverse pagination etc.
+  { trigger = "LT(1,Space)", negative_output = "Space", positive_output = "WM(Space, LShift)", match_any = "LShift" },
+]
 
 [behavior.combo]
 timeout = "50ms"
