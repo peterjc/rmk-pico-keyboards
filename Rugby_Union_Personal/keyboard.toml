@@ -62,15 +62,37 @@ forks = [
 [behavior.combo]
 timeout = "50ms"
 combos = [
-  # Letters on combos (layer 0 only)
+  # Letters on 2-key horizontal combos (layer 0 only)
   { actions = ["P", "G"], output = "V", layer = 0 },
   { actions = ["G", "M"], output = "Q", layer = 0 },
   { actions = ["F", "D"], output = "X", layer = 0 },
   { actions = ["Quote", "Minus"], output = "Z", layer = 0 },
   # Three-key combos for tab and enter
   { actions = ["F", "D", "L"], output = "Tab", layer = 0 },
-  { actions = ["U", "O", "Y"], output = "Enter", layer = 0 }
-]
+  { actions = ["U", "O", "Y"], output = "Enter", layer = 0 },
+  # Symbols on 2-key vertical combos
+  { actions = ["Escape", "S"], output = "Grave", layer = 0 }, # backtick
+  { actions = ["P", "N"], output = "SHIFTED(Quote)", layer = 0 }, # at-sign on UK layout
+  { actions = ["G", "T"], output = "SHIFTED(NonusBackslash)", layer = 0 },
+  { actions = ["M", "H"], output = "SHIFTED(4)", layer = 0 }, # dollar
+  { actions = ["K", "J"], output = "SHIFTED(5)", layer = 0 }, # percent
+  { actions = ["Dot", "Comma"], output = "SHIFTED(6)", layer = 0 }, # caret
+  { actions = ["BackSpace", "A"], output = "SHIFTED(Slash)", layer = 0 }, # question-mark
+  { actions = ["Quote", "E"], output = "NonusHash", layer = 0 }, # hash
+  { actions = ["Minus", "I"], output = "SHIFTED(1)", layer = 0 }, # exclamation-mark
+  { actions = ["Equal", "C"], output = "SHIFTED(NonusHash)", layer = 0 }, # tilde
+  # Brackets etc on 2-key horizontal inner combos
+  { actions = ["M", "K"], output = "NonusBackslash", layer = 0 }, # \
+  { actions = ["Backspace", "Dot"], output = "Slash", layer = 0 }, # /
+  { actions = ["H", "K"], output = "SHIFTED(LeftBracket)", layer = 0 }, # {
+  { actions = ["A", "Dot"], output = "SHIFTED(RightBracket)", layer = 0 }, # }
+  { actions = ["H", "J"], output = "SHIFTED(9)", layer = 0 }, # (
+  { actions = ["A", "Comma"], output = "SHIFTED(0)", layer = 0 }, # )
+  { actions = ["L", "J"], output = "LeftBracket", layer = 0 }, # [
+  { actions = ["U", "Comma"], output = "RightBracket", layer = 0 }, # ]
+  # Thumbs
+  { actions = ["TH(R,LShift)", "LT(1,Space)"], output = "CapsWordToggle", layer = 0 },  
+ ]
 
 [host]
 # Vial Unlock combination: simultaneous press of specified keys
