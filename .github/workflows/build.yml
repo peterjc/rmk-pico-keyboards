@@ -11,6 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         kb:
+          - { name: Goldilocks32_RP2040 }
           - { name: Rugby_Union_RP2040 }
           - { name: Fly_Half_ESP32H2 }
           - { name: Fly_Half_ESP32S3 }
