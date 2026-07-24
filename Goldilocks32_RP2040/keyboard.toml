@@ -20,6 +20,9 @@ col_pins = [
     "PIN_29"
 ]
 
+# There are no diodes on this design, so this should make no difference?
+row2col = true
+
 [layout]
 # Using a physical matrix layout of 3 rows, 10 cols (30 keys only, ignoring 5-way button and optional thumb keys)
 # That reduces scanning matrix from 9 rows, 16 columns, to only 8 rows (GPIO 6 is only used for the 5-way nav).
