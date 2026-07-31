@@ -38,7 +38,7 @@ name = "HD Promethium"
 keys = """
 Escape P     G     M     K                       Dot BackSpace Quote Minus Equal
 S      N     T     H     J                     Comma         A     E     E     C
-B      F     D     L     TH(R,LShift)    LT(1,Space)         U     O     Y     W
+B      F     D     L     TH(R,LShift)    LT(2,Space)         U     O     Y     W
 """
 
 [[layer]]
@@ -59,7 +59,7 @@ forks = [
   { trigger = "Quote", negative_output = "Comma", positive_output = "WM(2, LShift)", match_any = "LShift|RShift" },
   # Left-shift + space (left thumb-shift held, tap right thumb) outputs 'R' key
   # However, right-shift + space still gives shift+space for reverse pagination etc.
-  { trigger = "LT(1,Space)", negative_output = "Space", positive_output = "WM(Space, LShift)", match_any = "LShift" },
+  { trigger = "LT(2,Space)", negative_output = "Space", positive_output = "WM(Space, LShift)", match_any = "LShift" },
 ]
 
 [behavior.combo]
@@ -94,7 +94,7 @@ combos = [
   { actions = ["L", "J"], output = "LeftBracket", layer = 0 }, # [
   { actions = ["U", "Comma"], output = "RightBracket", layer = 0 }, # ]
   # Thumbs
-  { actions = ["TH(R,LShift)", "LT(1,Space)"], output = "CapsWordToggle", layer = 0 },  
+  { actions = ["TH(R,LShift)", "LT(2,Space)"], output = "CapsWordToggle", layer = 0 },  
  ]
 
 [host]
