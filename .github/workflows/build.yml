@@ -16,7 +16,7 @@ jobs:
           # - { name: Fly_Half_ESP32H2 }
           # - { name: Fly_Half_ESP32S3 }
           # - { name: Fly_Half_NRF52840 }
-    uses: HaoboGu/rmk/.github/workflows/user_build.yml@main
+    uses: rmk-rs/rmk/.github/workflows/user_build.yml@main
     with:
       keyboard_toml_path: ${{ matrix.kb.name }}/keyboard.toml
       vial_json_path: ${{ matrix.kb.name }}/vial.json
