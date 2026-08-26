@@ -37,8 +37,8 @@ combo_max_num = 32
 name = "HD Promethium"
 keys = """
 Escape P     G     M     K                       Dot BackSpace Quote Minus Equal
-S      N     T     H     J                     Comma         A     E     E     C
-B      F     D     L     TH(R,LShift)    LT(2,Space)         U     O     Y     W
+S      N     T     H     J                     Comma         A     E     I     C
+B      F     D     L     MT(R,LShift)    LT(1,Space)         U     O     Y     W
 """
 
 [[layer]]
@@ -86,7 +86,7 @@ combos = [
   { actions = ["Equal", "C"], output = "SHIFTED(NonusHash)", layer = 0 }, # tilde
   # Brackets etc on 2-key horizontal inner combos
   { actions = ["M", "K"], output = "NonusBackslash", layer = 0 }, # \
-  { actions = ["Backspace", "Dot"], output = "Slash", layer = 0 }, # /
+  { actions = ["BackSpace", "Dot"], output = "Slash", layer = 0 }, # /
   { actions = ["H", "K"], output = "SHIFTED(LeftBracket)", layer = 0 }, # {
   { actions = ["A", "Dot"], output = "SHIFTED(RightBracket)", layer = 0 }, # }
   { actions = ["H", "J"], output = "SHIFTED(9)", layer = 0 }, # (
@@ -94,7 +94,7 @@ combos = [
   { actions = ["L", "J"], output = "LeftBracket", layer = 0 }, # [
   { actions = ["U", "Comma"], output = "RightBracket", layer = 0 }, # ]
   # Thumbs
-  { actions = ["TH(R,LShift)", "LT(2,Space)"], output = "CapsWordToggle", layer = 0 },  
+  { actions = ["MT(R,LShift)", "LT(1,Space)"], output = "CapsWordToggle", layer = 0 },
  ]
 
 [host]
