@@ -7,6 +7,12 @@ This is my fork of the
 [RMK Project Template repository](https://github.com/HaoboGu/rmk-project-template),
 so that I can experiment with keyboards and layouts using [RMK firmware](https://rmk.rs/).
 
+> [!WARNING]
+>  This is barely tested at this point! I've yet to build the "Fly Half"
+> (and may not given the issues this uncovered), while early testing with the
+> "Rugby Union" suggests some tweaking is needed for diode-free sparse scanning
+> matrices to work in RMK.
+
 This follows the documentation for using
 [GitHub Actions Cloud Compilation](https://rmk.rs/docs/user_guide/create_firmware/cloud_compilation),
 with a slightly more complicated
