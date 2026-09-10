@@ -24,11 +24,11 @@ col_offset = 0
 # Define matrix pins, scanning matrix is 7 rows, 7 cols:
 #
 # Have 15 physically available pins are:
-# Left top: GPIO24, 25, 0, 1, 2, 3, 4, 5, GPIO8 (also RGB)
+# Left top: GPIO24, 23, 0, 1, 2, 3, 4, 5, GPIO8 (also RGB)
 # Right top: 5V, GND, 3V3, GPIO14, 13 (also LED), 12, 11, 10, 9
 #
 # Trying to use all except the RGB LED on GPIO8.
-row_pins = ["GPIO24", "GPIO25", "GPIO0", "GPIO1", "GPIO2", "GPIO3", "GPIO4"]
+row_pins = ["GPIO24", "GPIO23", "GPIO0", "GPIO1", "GPIO2", "GPIO3", "GPIO4"]
 col_pins = ["GPIO5", "GPIO14", "GPIO13", "GPIO12", "GPIO11", "GPIO10", "GPIO9"]
 
 # Note there're TWO brackets, since the peripheral is a list
@@ -44,7 +44,7 @@ col_offset = 7
 [split.peripheral.matrix]
 # Define matrix pins, scanning matrix is 7 rows, 7 cols:
 # Real wiring or right likely to differ from the left half
-row_pins = ["GPIO24", "GPIO25", "GPIO0", "GPIO1", "GPIO2", "GPIO3", "GPIO4"]
+row_pins = ["GPIO24", "GPIO23", "GPIO0", "GPIO1", "GPIO2", "GPIO3", "GPIO4"]
 col_pins = ["GPIO5", "GPIO14", "GPIO13", "GPIO12", "GPIO11", "GPIO10", "GPIO9"]
 
 [layout]
