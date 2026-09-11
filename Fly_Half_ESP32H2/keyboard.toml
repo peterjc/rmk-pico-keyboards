@@ -34,7 +34,7 @@ direct_pins = [
 ]
 
 # Pin behavior (default: true = active low with pull-up)
-direct_pin_low_active = true
+direct_pin_low_active = false
 
 # Note there're TWO brackets, since the peripheral is a list
 # Peripheral 0
