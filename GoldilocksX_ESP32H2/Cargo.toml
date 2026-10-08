@@ -33,6 +33,9 @@ esp-rtos = { version = "0.4", features = ["esp32h2", "esp-radio", "embassy"] }
 esp-bootloader-esp-idf = { version = "0.6", features = ["esp32h2", "log-04"] }
 bt-hci = { version = "0.10" }
 
+[patch.crates-io]
+esp-hal = { git = "https://github.com/esp-rs/esp-hal", rev = "f686cf3fa8c80888521f56a06353e3a735a48d3c" }
+
 [build-dependencies]
 xz2 = "0.1.7"
 json = "0.12"
